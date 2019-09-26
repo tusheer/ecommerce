@@ -6,6 +6,9 @@ function Sign() {
 
 	const { id } = context;
 	const responseGoogle = (response) => {
+		console.log('failed to sign in');
+	};
+	const onsuccess = (response) => {
 		id(response.profileObj);
 	};
 
@@ -74,7 +77,7 @@ function Sign() {
 							<p className="text-white m-0 p-0">Sign up with google</p>
 						</div>
 					)}
-					onSuccess={responseGoogle}
+					onSuccess={onsuccess}
 					onFailure={responseGoogle}
 					cookiePolicy={'single_host_origin'}
 				/>
