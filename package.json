@@ -1,0 +1,24 @@
+{
+  "name": "ecommmers",
+  "version": "1.0.0",
+  "description": "This is a ecommerce web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaantusher/ecommerce.git"
+  },
+  "author": "Jane alam tusher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaantusher/ecommerce/issues"
+  },
+  "homepage": "https://github.com/jaantusher/ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
